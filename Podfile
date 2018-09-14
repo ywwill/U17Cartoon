@@ -10,8 +10,6 @@ target 'U17Cartoon' do
     pod 'SnapKit'
     pod 'SVProgressHUD'
     pod 'Kingfisher'
-    #tabbar
-    pod 'ESTabBarController-swift'
     #banner
     pod 'FSPagerView'
     pod 'Moya'
