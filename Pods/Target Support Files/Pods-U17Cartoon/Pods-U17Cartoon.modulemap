@@ -1,0 +1,6 @@
+framework module Pods_U17Cartoon {
+  umbrella header "Pods-U17Cartoon-umbrella.h"
+
+  export *
+  module * { export * }
+}

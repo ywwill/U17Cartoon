@@ -12,6 +12,7 @@
 		4426F270214B4AF10073B32C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4426F26E214B4AF10073B32C /* Main.storyboard */; };
 		4426F272214B4AF40073B32C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4426F271214B4AF40073B32C /* Assets.xcassets */; };
 		4426F275214B4AF40073B32C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4426F273214B4AF40073B32C /* LaunchScreen.storyboard */; };
+		503C1B6EC99B7C59A54C5A71 /* Pods_U17Cartoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800091C2AB589127D694B1EB /* Pods_U17Cartoon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		4426F271214B4AF40073B32C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4426F274214B4AF40073B32C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4426F276214B4AF40073B32C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6428455F3530FBD990ADD750 /* Pods-U17Cartoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-U17Cartoon.release.xcconfig"; path = "Pods/Target Support Files/Pods-U17Cartoon/Pods-U17Cartoon.release.xcconfig"; sourceTree = "<group>"; };
+		800091C2AB589127D694B1EB /* Pods_U17Cartoon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_U17Cartoon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF1AE44D617854353FBAFE24 /* Pods-U17Cartoon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-U17Cartoon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-U17Cartoon/Pods-U17Cartoon.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				503C1B6EC99B7C59A54C5A71 /* Pods_U17Cartoon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C71A74595297DCAE94AB277 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				800091C2AB589127D694B1EB /* Pods_U17Cartoon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4426F25E214B4AF10073B32C = {
 			isa = PBXGroup;
 			children = (
 				4426F269214B4AF10073B32C /* U17Cartoon */,
 				4426F268214B4AF10073B32C /* Products */,
+				A014CC6597F504BC265DC4C2 /* Pods */,
+				2C71A74595297DCAE94AB277 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = U17Cartoon;
 			sourceTree = "<group>";
 		};
+		A014CC6597F504BC265DC4C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF1AE44D617854353FBAFE24 /* Pods-U17Cartoon.debug.xcconfig */,
+				6428455F3530FBD990ADD750 /* Pods-U17Cartoon.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4426F279214B4AF40073B32C /* Build configuration list for PBXNativeTarget "U17Cartoon" */;
 			buildPhases = (
+				A1CA428BBEC067BC935BF037 /* [CP] Check Pods Manifest.lock */,
 				4426F263214B4AF10073B32C /* Sources */,
 				4426F264214B4AF10073B32C /* Frameworks */,
 				4426F265214B4AF10073B32C /* Resources */,
+				EA47D565A58C3ABCC3BAE6FF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,67 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A1CA428BBEC067BC935BF037 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-U17Cartoon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA47D565A58C3ABCC3BAE6FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-U17Cartoon/Pods-U17Cartoon-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeMenuViewController/SwipeMenuViewController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeMenuViewController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-U17Cartoon/Pods-U17Cartoon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4426F263214B4AF10073B32C /* Sources */ = {
@@ -278,6 +365,7 @@
 		};
 		4426F27A214B4AF40073B32C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF1AE44D617854353FBAFE24 /* Pods-U17Cartoon.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +385,7 @@
 		};
 		4426F27B214B4AF40073B32C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6428455F3530FBD990ADD750 /* Pods-U17Cartoon.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
