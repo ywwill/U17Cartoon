@@ -18,6 +18,8 @@
 		445D4AB3214B8CEC0062010E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445D4AAF214B8CEC0062010E /* LaunchScreen.storyboard */; };
 		445D4AB4214B8CEC0062010E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 445D4AB1214B8CEC0062010E /* Main.storyboard */; };
 		445D4AB6214B93900062010E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445D4AB5214B93900062010E /* ViewController.swift */; };
+		445D4AB8214B9CC70062010E /* U17Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445D4AB7214B9CC60062010E /* U17Api.swift */; };
+		445D4ABA214B9D230062010E /* U17Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445D4AB9214B9D230062010E /* U17Model.swift */; };
 		503C1B6EC99B7C59A54C5A71 /* Pods_U17Cartoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800091C2AB589127D694B1EB /* Pods_U17Cartoon.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		445D4AB0214B8CEC0062010E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		445D4AB2214B8CEC0062010E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		445D4AB5214B93900062010E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		445D4AB7214B9CC60062010E /* U17Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = U17Api.swift; sourceTree = "<group>"; };
+		445D4AB9214B9D230062010E /* U17Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = U17Model.swift; sourceTree = "<group>"; };
 		6428455F3530FBD990ADD750 /* Pods-U17Cartoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-U17Cartoon.release.xcconfig"; path = "Pods/Target Support Files/Pods-U17Cartoon/Pods-U17Cartoon.release.xcconfig"; sourceTree = "<group>"; };
 		800091C2AB589127D694B1EB /* Pods_U17Cartoon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_U17Cartoon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF1AE44D617854353FBAFE24 /* Pods-U17Cartoon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-U17Cartoon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-U17Cartoon/Pods-U17Cartoon.debug.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 		4426F27C214B54780073B32C /* U17Main */ = {
 			isa = PBXGroup;
 			children = (
+				445D4AB7214B9CC60062010E /* U17Api.swift */,
+				445D4AB9214B9D230062010E /* U17Model.swift */,
 				4426F28B214B56650073B32C /* Const.swift */,
 				4426F28D214B580A0073B32C /* U17TabBarController.swift */,
 			);
@@ -294,12 +300,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				445D4AB8214B9CC70062010E /* U17Api.swift in Sources */,
 				4426F288214B55FA0073B32C /* U17BookRackViewController.swift in Sources */,
 				4426F26B214B4AF10073B32C /* AppDelegate.swift in Sources */,
 				4426F282214B55460073B32C /* U17TodayViewController.swift in Sources */,
 				4426F286214B55D40073B32C /* U17FindViewController.swift in Sources */,
 				4426F28A214B560B0073B32C /* U17MineViewController.swift in Sources */,
 				4426F28E214B580A0073B32C /* U17TabBarController.swift in Sources */,
+				445D4ABA214B9D230062010E /* U17Model.swift in Sources */,
 				445D4AB6214B93900062010E /* ViewController.swift in Sources */,
 				4426F28C214B56650073B32C /* Const.swift in Sources */,
 			);
