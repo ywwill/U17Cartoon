@@ -33,7 +33,7 @@ private  func _topVC(_ vc: UIViewController?) -> UIViewController? {
 // 打印请求日志
 private func reversedPrint(_ separator: String, terminator: String, items: Any...) {
     for item in items {
-        print(item, separator: separator, terminator: terminator)
+       // print(item, separator: separator, terminator: terminator)
     }
 }
 
