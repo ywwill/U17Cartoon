@@ -57,5 +57,62 @@ struct dayComicItemModel: HandyJSON {
     var chapterCount: Int = 0
 }
 
+// 书籍详情
+struct ComicStaticModel: HandyJSON {
+    var name: String?
+    var comic_id: Int = 0
+    var short_description: String?
+    var accredit: Int = 0
+    var cover: String?
+    var is_vip: Int = 0
+    var type: Int = 0
+    var ori: String?
+    var theme_ids: [String]?
+    var series_status: Int = 0
+    var last_update_time: TimeInterval = 0
+    var description: String?
+    var cate_id: String?
+    var status: Int = 0
+    var thread_id: Int = 0
+    var last_update_week: String?
+    var wideCover: String?
+    var classifyTags: [ClassifyTagModel]?
+    var is_week: Bool = false
+    var comic_color: String?
+    var author: AuthorModel?
+    var is_dub: Bool = false
+}
 
+// 作者
+struct AuthorModel: HandyJSON {
+    var id: Int = 0
+    var avatar: String?
+    var name: String?
+}
+
+// 书籍分类
+struct ClassifyTagModel: HandyJSON {
+    var name: String?
+    var argName: String?
+    var argVal: Int = 0
+}
+
+// 书籍点击收藏
+struct ComicRealtimeModel: HandyJSON {
+    var comic_id: Int = 0
+    var user_id: Int = 0
+    var status: Int = 0
+    var click_total: String?
+    var total_ticket: String?
+    var comment_total: String?
+    var total_tucao: String?
+    var favorite_total: String?
+    var gift_total: String?
+    var monthly_ticket: String?
+    var vip_discount: Double = 0
+    var is_vip_free: Bool = false
+    var is_free: Bool = false
+    var is_vip_buy: Bool = false
+    var is_auto_buy: Bool = false
+}
 

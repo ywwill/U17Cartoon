@@ -24,6 +24,11 @@
 		445D4ABE214BA1640062010E /* U17TodayHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445D4ABD214BA1640062010E /* U17TodayHeaderView.swift */; };
 		445D4AC0214BA1730062010E /* U17TodayFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445D4ABF214BA1730062010E /* U17TodayFooterView.swift */; };
 		445D4AC2214BA1880062010E /* U17TodayFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445D4AC1214BA1880062010E /* U17TodayFooterCell.swift */; };
+		44BA8945214F899A00CB37A1 /* U17BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA8944214F899A00CB37A1 /* U17BooksViewController.swift */; };
+		44BA8947214F8AF100CB37A1 /* U17BooksHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA8946214F8AF100CB37A1 /* U17BooksHeaderView.swift */; };
+		44BA894C214F953700CB37A1 /* U17BooksDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA894B214F953700CB37A1 /* U17BooksDetailController.swift */; };
+		44BA894E214F955700CB37A1 /* U17BooksCatalogueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA894D214F955700CB37A1 /* U17BooksCatalogueController.swift */; };
+		44BA8950214F957F00CB37A1 /* U17BooksCommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BA894F214F957F00CB37A1 /* U17BooksCommentController.swift */; };
 		503C1B6EC99B7C59A54C5A71 /* Pods_U17Cartoon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800091C2AB589127D694B1EB /* Pods_U17Cartoon.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +52,11 @@
 		445D4ABD214BA1640062010E /* U17TodayHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = U17TodayHeaderView.swift; sourceTree = "<group>"; };
 		445D4ABF214BA1730062010E /* U17TodayFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = U17TodayFooterView.swift; sourceTree = "<group>"; };
 		445D4AC1214BA1880062010E /* U17TodayFooterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = U17TodayFooterCell.swift; sourceTree = "<group>"; };
+		44BA8944214F899A00CB37A1 /* U17BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = U17BooksViewController.swift; sourceTree = "<group>"; };
+		44BA8946214F8AF100CB37A1 /* U17BooksHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = U17BooksHeaderView.swift; sourceTree = "<group>"; };
+		44BA894B214F953700CB37A1 /* U17BooksDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = U17BooksDetailController.swift; sourceTree = "<group>"; };
+		44BA894D214F955700CB37A1 /* U17BooksCatalogueController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = U17BooksCatalogueController.swift; sourceTree = "<group>"; };
+		44BA894F214F957F00CB37A1 /* U17BooksCommentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = U17BooksCommentController.swift; sourceTree = "<group>"; };
 		6428455F3530FBD990ADD750 /* Pods-U17Cartoon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-U17Cartoon.release.xcconfig"; path = "Pods/Target Support Files/Pods-U17Cartoon/Pods-U17Cartoon.release.xcconfig"; sourceTree = "<group>"; };
 		800091C2AB589127D694B1EB /* Pods_U17Cartoon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_U17Cartoon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF1AE44D617854353FBAFE24 /* Pods-U17Cartoon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-U17Cartoon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-U17Cartoon/Pods-U17Cartoon.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +106,7 @@
 				4426F26A214B4AF10073B32C /* AppDelegate.swift */,
 				445D4AB5214B93900062010E /* ViewController.swift */,
 				4426F27C214B54780073B32C /* U17Main */,
+				44BA8943214F897700CB37A1 /* U17Books */,
 				4426F27D214B548C0073B32C /* U17Today */,
 				4426F27E214B549D0073B32C /* U17Find */,
 				4426F27F214B54A60073B32C /* U17BookRack */,
@@ -169,6 +180,42 @@
 			children = (
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		44BA8943214F897700CB37A1 /* U17Books */ = {
+			isa = PBXGroup;
+			children = (
+				44BA8944214F899A00CB37A1 /* U17BooksViewController.swift */,
+				44BA8946214F8AF100CB37A1 /* U17BooksHeaderView.swift */,
+				44BA8948214F94DD00CB37A1 /* Detail */,
+				44BA8949214F94E800CB37A1 /* Catalogue */,
+				44BA894A214F951100CB37A1 /* Comment */,
+			);
+			path = U17Books;
+			sourceTree = "<group>";
+		};
+		44BA8948214F94DD00CB37A1 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				44BA894B214F953700CB37A1 /* U17BooksDetailController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		44BA8949214F94E800CB37A1 /* Catalogue */ = {
+			isa = PBXGroup;
+			children = (
+				44BA894D214F955700CB37A1 /* U17BooksCatalogueController.swift */,
+			);
+			path = Catalogue;
+			sourceTree = "<group>";
+		};
+		44BA894A214F951100CB37A1 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				44BA894F214F957F00CB37A1 /* U17BooksCommentController.swift */,
+			);
+			path = Comment;
 			sourceTree = "<group>";
 		};
 		A014CC6597F504BC265DC4C2 /* Pods */ = {
@@ -314,16 +361,21 @@
 			files = (
 				445D4AB8214B9CC70062010E /* U17Api.swift in Sources */,
 				4426F288214B55FA0073B32C /* U17BookRackViewController.swift in Sources */,
+				44BA8947214F8AF100CB37A1 /* U17BooksHeaderView.swift in Sources */,
 				4426F26B214B4AF10073B32C /* AppDelegate.swift in Sources */,
 				4426F282214B55460073B32C /* U17TodayViewController.swift in Sources */,
+				44BA8945214F899A00CB37A1 /* U17BooksViewController.swift in Sources */,
 				4426F286214B55D40073B32C /* U17FindViewController.swift in Sources */,
 				445D4ABE214BA1640062010E /* U17TodayHeaderView.swift in Sources */,
+				44BA894E214F955700CB37A1 /* U17BooksCatalogueController.swift in Sources */,
 				4426F28A214B560B0073B32C /* U17MineViewController.swift in Sources */,
 				4426F28E214B580A0073B32C /* U17TabBarController.swift in Sources */,
 				445D4ABA214B9D230062010E /* U17Model.swift in Sources */,
 				445D4AB6214B93900062010E /* ViewController.swift in Sources */,
 				445D4AC2214BA1880062010E /* U17TodayFooterCell.swift in Sources */,
 				445D4ABC214BA1520062010E /* U17TodayCell.swift in Sources */,
+				44BA8950214F957F00CB37A1 /* U17BooksCommentController.swift in Sources */,
+				44BA894C214F953700CB37A1 /* U17BooksDetailController.swift in Sources */,
 				4426F28C214B56650073B32C /* Const.swift in Sources */,
 				445D4AC0214BA1730062010E /* U17TodayFooterView.swift in Sources */,
 			);
