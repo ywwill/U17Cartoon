@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '11.0'
 
 target 'U17Cartoon' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
@@ -13,7 +13,7 @@ target 'U17Cartoon' do
     #banner
     pod 'FSPagerView'
     pod 'Moya'
-    pod 'HandyJSON'
+    pod 'HandyJSON', '~> 4.2.1'
     pod 'SwiftyJSON'
     # 分页
     pod 'SwipeMenuViewController'
